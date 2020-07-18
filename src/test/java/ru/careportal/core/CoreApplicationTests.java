@@ -1,10 +1,10 @@
-package ru.innopolis.stc23.CareProject;
+package ru.careportal.core;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CareProjectApplicationTests {
+class CoreApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,13 +1,13 @@
-package ru.innopolis.stc23.CareProject;
+package ru.careportal.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CareProjectApplication {
+public class CoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CareProjectApplication.class, args);
+		SpringApplication.run(CoreApplication.class, args);
 	}
 
 }

@@ -8,7 +8,8 @@ header {
     background-color: white;
     margin-top:35px;
     position: relative;
-    height: 165px;
+    min-height: 78px;
+    max-height: 165px;
 }
 .fixed-container {
     width: 90%;
