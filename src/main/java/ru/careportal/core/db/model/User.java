@@ -18,13 +18,14 @@ import java.util.Date;
 public abstract class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "user_id")
     private Long id;
     @Column(unique = true)
     @NonNull
     private String email;
     @NonNull
     private String password;
-    @Column(name = "fullName")
+    @Column(name = "full_name")
     private String fullName;
     @Enumerated(EnumType.STRING)
     private Sex sex;

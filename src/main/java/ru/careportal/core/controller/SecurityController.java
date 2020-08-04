@@ -28,10 +28,11 @@ public class SecurityController {
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registration(Model model) {
         log.debug("registration");
-        model.addAttribute("PageTitle", "Registration Page");
+        model.addAttribute("PageTitle", "Страница регистрации");
         model.addAttribute("PageBody", "reg.jsp");
         return "baseTemplate";
     }
+
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public String processRegistration(RegistrationForm form, Model model, Errors errors) {
         log.debug("processRegistration");

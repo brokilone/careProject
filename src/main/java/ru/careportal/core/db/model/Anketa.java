@@ -25,7 +25,7 @@ public class Anketa {
     private List<Question> questionList = new ArrayList<>();
 
     @OneToMany(mappedBy="anketa", cascade = CascadeType.ALL)
-    private List<Pass> passList = new ArrayList<>();
+    private List<PassedAnketa> passedAnketaList = new ArrayList<>();
 
     @Override
     public String toString() {
@@ -34,4 +34,5 @@ public class Anketa {
                 ", name='" + name + '\'' +
                 '}';
     }
+
 }

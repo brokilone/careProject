@@ -162,9 +162,18 @@ main{
     background-color: #dbe1ee;
     min-height: 635px;
 }
-#date{
+#date, #data, #anket-list, #fill-anket-list, #p-list{
     display: none;
 }
+.about-me, .av-ankets, .fill-ankets, .patient-list{
+    background-color: transparent;
+    display: inline-block;
+}
+input[type="image"]{
+    margin: 0;
+    transition: all 0.5s ease 0s; transform: rotate(0deg);
+}
+
 footer{
     height: 950px;
     background-color: #171717;
