@@ -23,7 +23,7 @@
             <td><c:out value="${user.getFullName()}"/></td>
             <td>
                 <c:if test="${user.isEnabled()}">
-                    <form:checkbox path="userDtoList[${vsq.index}].enabled" checked="checked"/>
+                    <form:checkbox text-align="center" path="userDtoList[${vsq.index}].enabled" checked="checked"/>
 
                 </c:if>
                 <c:if test="${!user.isEnabled()}">
