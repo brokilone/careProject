@@ -46,7 +46,10 @@ button, input[type="submit"] {
 button:hover, input[type="submit"]:hover {
     background-color: #2caf94;
 }
-
+button a{
+    text-decoration: none;
+    color: #ffffff;
+}
 ul {
     color: #6a6a6a;
 }
@@ -65,7 +68,7 @@ table {
 }
 
 th, td {
-    padding: 20px 33px;
+    padding: 10px 20px;
     border: 1px solid #6c6c6c;
 }
 
@@ -104,7 +107,32 @@ textarea{
     padding: 5px;
     margin: 20px;
 }
+.selection option{
+    width: 200px;
+}
+
+.selection select{
+    margin-right: 20px;
+}
 .error{
     border: 1px solid ;
+}
+#error-pass{
+    display: none;
+}
+.center-td{
+    text-align: center;
+}
+#first-filter{
+    float: left;
+}
+#sec-filter{
+    float: left;
+}
+#third-filter{
+    float: left;
+}
+#select-input{
+    clear: both;
 }
 

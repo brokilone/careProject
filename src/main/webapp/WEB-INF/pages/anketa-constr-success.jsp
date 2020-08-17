@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Artem
-  Date: 28.07.2020
-  Time: 16:49
+  Date: 04.08.2020
+  Time: 20:37
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -12,6 +12,4 @@
     Анкета успешно сохранена!
 </div>
 <br>
-<div>
-    <a href="/patient" class="checked-a">Вернуться</a>
-</div>
+<a href="${pageContext.request.contextPath}/anketa-constr">Создать еще одну анкету</a>

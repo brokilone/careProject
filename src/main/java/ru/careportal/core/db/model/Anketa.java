@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -33,6 +34,11 @@ public class Anketa {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public void addQuestion(Question question) {
+        questionList.add(question);
+        question.getAnketaList().add(this);
     }
 
 }

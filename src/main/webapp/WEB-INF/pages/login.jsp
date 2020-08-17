@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic"
           rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/error-style.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/messages.css">
     <script src="${pageContext.request.contextPath}/js/hamburger.js"></script>
     <title>${PageTitle}</title>
 </head>
@@ -30,18 +30,30 @@
 </header>
 <main>
     <div class="fixed-container">
+
 <h3>Введите данные учетной записи</h3>
+        <br>
+        <section class="message-section">
+            <c:if test="${not empty error}">
+                <div class="ms_error">
+                    <i class="fa fa-times-circle"></i>
+                        ${error}
+                </div>
+            </c:if>
+            <c:if test="${not empty message}">
+                <div class="ms_info">
+                    <i class="fa fa-check-circle"></i>
+                        ${message}
+                </div>
+            </c:if>
+        </section>
 <div>
     <form action="/login" method="post">
+        <div class="reg">
         <div><label> Ваш email : <input type="email" name="email"/> </label></div>
         <div><label> Пароль : <input type="password" name="password"/> </label></div>
+        </div>
         <div><input type="submit" value="Войти"/></div>
-        <c:if test="${not empty error}">
-            <div class="ms_error">
-                <i class="fa fa-times-circle"></i>
-                ${error}
-            </div>
-        </c:if>
     </form>
 </div>
 
